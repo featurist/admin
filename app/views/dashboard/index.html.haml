@@ -12,3 +12,7 @@
       %li
         %img{:src => "https://randomuser.me/api/portraits/med/women/11.jpg"}
         %span Ruth edited menu 6 hours ago
+%script
+  $("#nav-toggle").click(function() {
+  $(".main-content").toggleClass('toggle-menu');
+  });
