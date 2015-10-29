@@ -1,0 +1,163 @@
+@import "media_queries";
+
+$neon:rgba(68,177,157,1);
+$strongNeon:#27F9D2;
+body {
+  overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+header{
+  height: 70px;
+  background: #343F50;
+  z-index: 1;
+  position: absolute;
+z-index: 2;
+width: 100%;
+  & img{
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+.navigation {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  background: rgb(52,63,80);
+  & li {
+    width: 300px;
+    & a {
+      display: block;
+      padding: 1em;
+      color: $neon;
+      font-size: 1.4em;
+      text-decoration: none;
+      font-weight: 100;
+      & .fa{
+        padding-right: 5px;
+        font-size: 1.3em;
+      }
+    }
+    & a:hover {
+      color:$neon;
+      background: rgba(255,255,255,1);
+      cursor: pointer;
+    }
+  }
+}
+
+
+.main-content {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #EDEFF5;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 4em;
+  padding-top: 90px;
+}
+
+.nav-toggle {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-toggle"] {
+  position: fixed;
+  left: 15px; top: 20px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-toggle + label, .main-content {
+  transition: left 0.2s;
+}
+
+
+.nav-toggle:checked ~ .main-content {
+  left: 300px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+.user{
+  height: 220px;
+  position: relative;
+  border-bottom: 1px solid $neon;
+  & img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    border: 2px solid $neon;
+  }
+  & h2{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 100;
+    color: $strongNeon;
+  }
+  & .settings{
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    font-size: 2em;
+    color:$neon;
+    &:hover{
+      color:$strongNeon;
+      cursor: pointer;
+    }
+  }
+}
+.container{
+  width: 320px;
+  & h1{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  & li{
+    list-style-type: none;
+    background: #E0E7FF;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 2px solid $neon;
+    &:last-of-type{
+      margin-bottom: 0px;
+
+    }
+    & img{
+      width: 70px;
+      height: 70px;
+      padding-right: 5px;
+      border-radius: 35px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+.fa-bars{
+  font-size:2em !important;
+  color:$neon;
+}
