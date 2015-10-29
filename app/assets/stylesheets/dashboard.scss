@@ -16,8 +16,8 @@ header{
   background: #343F50;
   z-index: 1;
   position: absolute;
-z-index: 2;
-width: 100%;
+  z-index: 2;
+  width: 100%;
   & img{
     height: 60px;
     margin-right: auto;
@@ -124,6 +124,7 @@ label[for="nav-toggle"] {
     background: transparent;
     font-size: 2em;
     color:$neon;
+    bottom: 25px;
     &:hover{
       color:$strongNeon;
       cursor: pointer;
