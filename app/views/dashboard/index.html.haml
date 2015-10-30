@@ -1,14 +1,39 @@
 %title Dashboard
 %div.main-content
-  %h1 Recent Activities
-  %div.container
-    %ul
-      %li
-        %img{:src => "https://randomuser.me/api/portraits/med/men/11.jpg"}
-        %span Joe edited the menu 3 hours ago
-      %li
-        %img{:src => "https://randomuser.me/api/portraits/med/men/1.jpg"}
-        %span Jack edited the menu 4 hours ago
-      %li
-        %img{:src => "https://randomuser.me/api/portraits/med/women/11.jpg"}
-        %span Ruth edited menu 6 hours ago
+  %h2 Recent Activity
+  %ol.activity-feed
+    %li.feed-item
+      %time.date{:datetime => "9-25"} Sep 25
+      %img{:src => "https://randomuser.me/api/portraits/med/men/11.jpg"}
+      %span.text
+        %a{:href => "www.github.com/dobiedad"} dobiedad
+        edited the images in
+        %a{:href => "www.github.com/dobiedad"} Menu
+    %li.feed-item
+      %time.date{:datetime => "9-24"} Sep 24
+      %img{:src => "https://randomuser.me/api/portraits/med/women/1.jpg"}
+      %span.text
+        %a{:href => "www.github.com/joshki"} joshki
+        edited the prices in
+        %a{:href => "www.github.com/dobiedad"} Products
+    %li.feed-item
+      %time.date{:datetime => "9-23"} Sep 23
+      %img{:src => "https://randomuser.me/api/portraits/med/men/13.jpg"}
+      %span.text
+        %a{:href => "www.github.com/dobiedad"} james
+        added new images to
+        %a{:href => "www.github.com/dobiedad"} Menu
+    %li.feed-item
+      %time.date{:datetime => "9-21"} Sep 21
+      %img{:src => "https://randomuser.me/api/portraits/med/men/16.jpg"}
+      %span.text
+        %a{:href => "www.github.com/dobiedad"} brown
+        edited the address in
+        %a{:href => "www.github.com/dobiedad"} Contact
+    %li.feed-item
+      %time.date{:datetime => "9-18"} Sep 18
+      %img{:src => "https://randomuser.me/api/portraits/med/women/13.jpg"}
+      %span.text
+        %a{:href => "www.github.com/dobiedad"} dobiedad
+        edited the images in
+        %a{:href => "www.github.com/dobiedad"} Menu
