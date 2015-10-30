@@ -12,6 +12,11 @@ body {
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
 html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
 
+
+html,body {
+  overflow: hidden;
+  overflow-y: auto;
+}
 header{
   height: 70px;
   background: #343F50;
@@ -57,7 +62,7 @@ header{
     }
     & a:hover {
       color:$neon;
-      background: rgba(255,255,255,1);
+      background: #EDEFF5;
       cursor: pointer;
     }
   }
@@ -67,12 +72,17 @@ header{
 .main-content {
   min-width: 100%;
   background-color: #EDEFF5;
-  position: absolute;
+  position: relative;
   top: 70px;
   left: 0;
   bottom: 0;
   height: 100%;
   z-index: 1;
+  padding: 30px;
+  & h1{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
 }
 
 .nav-toggle {
@@ -163,6 +173,6 @@ label[for="nav-toggle"] {
   font-size:2em !important;
   color:$neon;
 }
-.clearboth{
-  clear: both;
+#wrapper{
+  overflow: hidden;
 }
