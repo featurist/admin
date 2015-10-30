@@ -2,6 +2,7 @@
 $neon:rgba(68,177,157,1);
 $strongNeon:#27F9D2;
 $navbar:#343F50;
+$anchor:#50bced;
 body {
   position: relative;
 }
@@ -209,6 +210,7 @@ a {
   border-left: 2px solid #e4e8eb;
   border-bottom: 2px dotted #e4e8eb;
 
+
   &:last-child {
     border-color: transparent;
   }
@@ -239,7 +241,7 @@ a {
     margin-left: 5px;
 
   }
-  & img{
+   img{
     width: 80px;
     height: 80px;
     border-radius: 40px;
@@ -247,5 +249,36 @@ a {
     vertical-align: middle;
     border: 2px solid $neon;
   }
+  .section{
+    display: inline-block;
+    width: 320px;
+  }
+}
+.attachment{
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid #e4e8eb;
+  padding-left: 30px;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+  span{
+    font-size: 18px;
+    padding-top: 5px;
+  }
+  .fa{
+    font-size: 40px;
+    display: block;
+    color: $navbar;
+    text-align: center;
+    &:hover{
+      color:$anchor;
+    }
+  }
+
 }
 @import "media_queries";

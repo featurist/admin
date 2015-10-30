@@ -11,20 +11,26 @@
   }
   .feed-item{
     & img{
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
     }
   }
 }
 @media (min-width: 768px) {
   .navigation {
-    top: 0px;
+    top: 70px;
     z-index: 3;
+  }
+  .attachment{
+    margin-right:300px;
   }
   .main-content {
     transition: left 0.2s;
     left: 300px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  }
+  label.fa-bars{
+    display: none;
   }
 }
