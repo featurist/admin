@@ -95,10 +95,10 @@ label[for="nav-toggle"] {
 }
 
 
-.toggle-menu{
+.nav-toggle:checked ~ .main-content {
   left: 300px;
   box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-  position: fixed;
+
 }
 .user{
   height: 220px;
@@ -162,4 +162,7 @@ label[for="nav-toggle"] {
 .fa-bars{
   font-size:2em !important;
   color:$neon;
+}
+.clearboth{
+  clear: both;
 }
