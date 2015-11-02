@@ -10,10 +10,16 @@
     margin: auto;
   }
   .feed-item{
-    & img{
+     img{
       width: 30px;
       height: 30px;
       border-radius: 15px;
+    }
+
+  }
+  .attachment{
+    span{
+    font-size:14px;
     }
   }
 }
@@ -29,6 +35,12 @@
     transition: left 0.2s;
     left: 300px;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+  }
+  .feed-item{
+    .section{
+      display: inline-block;
+      width: 500px;
+    }
   }
   label.fa-bars{
     display: none;
